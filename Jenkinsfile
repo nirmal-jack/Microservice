@@ -12,14 +12,14 @@ pipeline {
             }
         }
         
-        stage('Push Docker Image') {
-            steps {
-                script {
-                    withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker push adijaiswal/loadgenerator:latest"
-                    }
-                }
-            }
-        }
+        //stage('Push Docker Image') {
+            //steps {
+                //script {
+                    //withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
+                        //sh "docker push adijaiswal/loadgenerator:latest"
+                    //}
+                //}
+            //}
+        //}
     }
 }
