@@ -12,14 +12,14 @@ pipeline {
             }
         }
         
-        stage('Push Docker Image') {
-            steps {
-                script {
-                    withDockerRegistry(credentialsId: 'nirmal', toolName: 'docker') {
-                        sh "docker push adijaiswal/adservice:latest "
-                    }
-                }
-            }
-        }
+       //stage('Push Docker Image') {
+          //steps {
+            //script {
+                //withDockerRegistry(credentialsId: 'nirmal', toolName: 'docker') {
+                  //sh "docker push adijaiswal/adservice:latest "
+                  //}
+            //}
+          //}
+       //}
     }
 }
